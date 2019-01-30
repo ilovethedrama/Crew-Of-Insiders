@@ -1,0 +1,679 @@
+* {
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: #90AC9A;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    /* scroll-padding-top: 150px; */
+    /* overflow: auto;
+    scroll-snap-type: y mandatory;
+    height:100vh; */
+}
+
+/* 
+font-family: 'Nova Cut', cursive;
+font-family: 'Tulpen One', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Chewy', cursive;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Chivo', sans-serif; 
+
+colors
+351A18
+9F3011
+C0592C
+A09983
+90AC9A
+
+font: font-style font-variant font-weight font-size/line-height font-family;
+*/
+
+a {
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    /* color: #9F3011; */
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+li {
+    font-family: 'Chivo';
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding-bottom: 1%;
+    background-color: transparent;
+    border-bottom: pink;
+    transition: 0.3s;
+    align-items: center;
+}
+
+nav a {
+    font-size: .8rem;
+    color: white;
+    /* border:solid 3px green;  */
+}
+
+#menuItems li a {
+    width: 500px;
+}
+
+#currency, #basket {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3%;
+    font-family: 'Nova Cut', cursive;
+    letter-spacing: .2rem;
+    flex-basis: 1;
+
+}
+
+#menu {
+    flex-basis: 2 900px;
+}
+
+#currency a {
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+.drops li:hover{
+    border-bottom:3px solid blue;
+}
+
+#menuItems li:hover .drops {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition: opacity .4s;
+}
+
+#menuItems li:hover {
+    color:#351A18;
+}
+    
+/* 9F3011
+C0592C
+A09983
+90AC9A */
+
+
+.drops li:hover{
+    color:black;
+}
+
+#brandLogo, #thirdSell h2 {
+    font-family: 'Nova Cut', cursive;
+    font-size: 4.5rem;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+#menuItems {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+
+#imgGall {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* border: solid 3px green; */
+    position: relative;
+    align-items: center;
+
+    background-image: url('../Media/denim8.jpg');
+    background-size: cover;
+    background-position: 0% 65%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+.go {
+    margin: 30px; 
+}
+
+#secondSell {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #90AC9A;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 2%; 
+}
+
+.miniSell {
+    width: 90%;
+    object-fit: cover;
+    padding: 10px;
+    height: 450px;
+    border: 2px solid pink;
+}
+
+
+#miniS1 {
+    object-position: 0% 0%;
+}
+
+.overtext h2 {
+    font-family: 'Nova Cut', cursive;
+    font-size: 1.2rem;
+    margin: 5px 0px;
+}
+
+.overtext p {
+    display: inline;
+    padding-right: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.overtext a:hover {
+    color:#C0592C;
+    border-bottom: 2px solid #C0592C;
+    padding-bottom: 5px;
+    transition: .5s;
+}
+
+.ssOS {
+flex: 0 400px;
+}
+
+
+section {
+    min-height: 100vh;
+    /* scroll-snap-align:start; */
+    border-bottom:1px solid pink;
+}
+
+#thirdSell {
+    background-color: #C0592C;
+    display: flex;
+    background-image: url('../Media/landscape1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
+
+ #thirdSell h2 {
+    margin: auto;
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+
+#basket {
+    display: flex;
+    padding: 0px 10px;
+}
+
+#shopBtn {
+    width:15%;
+    height: 5%;
+    padding: 10px 5px;
+    text-align: center;
+    background: #C0592C;
+    border-radius: 5px;
+    border: 3px solid #90AC9A;
+}
+
+#shopBtn:hover {
+    border: 3px solid #fff;
+}
+
+#basket h1 {
+    margin: 0;
+}
+
+#basketIcon {
+    display:none;
+    padding: 0px 10px;
+}
+
+#freshBox {
+    display:flex;
+    flex:row wrap;
+    width:100%;
+    justify-content: space-around;
+}
+
+img {
+    min-width:75px;
+}
+
+#fourthItems {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#fourthSell {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* align-content: center; */
+}
+
+#fourthSell h2 {
+    font-family: 'Nova Cut', cursive;
+    font-size:3rem;
+    padding: 10px 0px;
+    color: #fff;
+    text-align: center;
+    display:block;
+}
+
+#fourthSell button{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size:1.6rem;
+    width:15%;
+    color: #fff;
+    margin: 5px;
+    justify-content:center; 
+    text-align: center;
+    background-color:pink;
+    border:2px solid #90AC9A;
+    position:relative;
+    left: 42.4%;
+}
+
+#fourthItems > div img {
+    object-fit: cover;
+    width: 220px;
+    height: 390px;
+    padding: 5px;
+    margin:auto;
+    border: 2px solid pink;
+}
+
+#ling1 {
+    object-position: 50% 150%;
+
+}
+
+#ling2 {
+    object-position: 45% -100%;
+    transform: scale(1.4);
+}
+
+form {
+    border-radius: 50px;
+    display: flex;
+	flex-direction: column;
+	/* background transparent to allow for :before&::after effect */
+    background: transparent;
+    margin: 10px; 
+	max-width: 320px;
+	padding: 2rem;
+    position: relative;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    width:100%;
+    height:100%;
+    border: 3px solid pink;
+    transition: all .4s;
+    outline: 0;
+    justify-content: center;
+}
+
+
+legend {
+    font: 2.5rem 'Nova Cut', cursive;  
+/* 
+    font-family: 'Julius Sans One', sans-serif; */
+    text-transform: capitalize;
+    color:#fff;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form:focus-within {
+    border:3px solid #90AC9A;
+}
+
+
+#bizReq {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    padding-top: 30px;
+}
+
+input {
+    border: 3px solid white;
+    padding: 10px;
+    margin: 20px 0px;
+    background: transparent;
+    outline: 0;
+    color: white;
+    touch-action: manipulation;
+    transition: all .4s;
+    box-sizing: border-box;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+#bizReq form button {
+    background: pink;
+    padding: 10px;
+    border: 3px solid transparent;
+    width: 100%;
+    bottom: -30px;
+    right: 25%;
+    outline: 0;
+    transition: all .5s;
+    margin: auto;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: .9rem;
+    font-weight: 900;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#theSoc {
+    display:flex;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+#theSoc a {
+    padding: 15px;
+    margin: 25px;
+}
+
+#pixSet {
+    /* padding:7% 0%; */
+    display:flex;
+    flex-flow:column nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.shellshort:hover .pclass{
+    opacity: 1;
+}
+
+.shellwide:hover .pclass{
+    opacity: 1;
+}
+ 
+.shellwide {
+    position: relative;
+    height: 250px;
+    flex-basis: 70%;
+}
+
+.shellshort {
+    position: relative;
+    height: 250px;
+    flex-basis: 30%;
+}
+
+.text {
+    color:white;
+    position:absolute;
+    top: 50%;
+    left: 0%;
+    widows: 100%;
+    height:100%;
+    text-align: center;
+    margin: auto;
+    font: 1.4rem 'Nova Cut', cursive; 
+    padding-left: 10px;
+}
+#bali {
+    object-position: 0% 12%;
+}
+
+#taco {
+    object-position: 0% 29%;
+}
+
+#MarcyRolo {
+    object-position: 0% 27%;
+}
+
+#fest {
+    object-position: 0% 70%;
+}
+
+.pclass {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #C0592C;
+    opacity: 0;
+    transition: .5s ease;
+    height: 100%;
+    width:100%;
+}
+
+#pixSet img {
+    object-fit: cover;
+    box-sizing: border-box;
+    width:100%;
+}
+
+
+.wide {
+    height: 250px;
+    flex-basis: 70%;
+}
+
+.short {
+    height: 250px;
+    flex-basis: 30%;
+}
+
+fieldset {
+    border: 0px;
+    display:flex;
+    width:100%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+button:hover {
+    border: 3px solid white;
+    transition: all .5s; 
+    color: #90AC9A;
+}
+
+input:focus {
+    border: 3px solid pink;
+
+}
+
+label {
+    opacity: 0;
+    display:none;
+}
+
+#txt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+#st8z {
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+#st8z p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: .7rem;
+    font-weight: 600;   
+}
+
+.ggb {
+    height: 48px ;
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    /* padding-bottom: 30px; */
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+#appLinks {
+    display: flex;
+    flex: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ggb2 {
+    height: 70px;
+}
+
+#byMe {
+    text-align: center;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+    background: pink;
+    /* width: 100%; */
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#byMe span a {
+    font: 2.5rem 'Nova Cut', cursive;  
+    padding: 0px 10px;
+}
+
+#byMe:hover {
+    color: pink;
+    background: black;
+    transition: .7s;
+}
+
+.caption{
+    background:#90AC9A;
+    position:absolute;
+    bottom: 0;
+    left:0;
+    margin:10px 7px;
+    padding:5px 15px;
+    font-size: 1.2rem;
+    color:#fff;
+    letter-spacing: .1rem;
+    font-family: 'Chewy', cursive;
+    /* border:1px solid blue; */
+
+    
+}
+/* 
+font-family: 'Nova Cut', cursive;
+font-family: 'Tulpen One', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Chewy', cursive;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Chivo', sans-serif;  */
+
+.house{
+    position:relative;
+}
+
+@media (max-width: 770px) {
+    #theSoc {
+        display:flex;
+        flex-flow: row wrap;
+    }
+
+    #theSoc a {
+        margin: 10px 0px;
+        padding: 15px;
+    }
+
+    #menuItems {
+        display:none;
+    }
+
+    #currency {
+        display:flex;
+        flex-flow:row wrap;
+    }
+
+    #basketIcon {
+        display:block;
+    }
+
+    #basketTitle {
+        display:none;
+    }
+
+    #secondSell {
+        padding: 30px 0px;
+        flex-flow: row wrap;
+    }
+
+    #currency, #basket {
+        flex-basis:20%;
+    }
+
+    #currency a {
+        margin: 5px;
+        padding:0px 10px;
+    }
+
+    .overtext {
+        display: flex;
+        flex-flow: row nowrap;    
+    }
+
+    .overtext p a {
+        font-size: .7rem;
+        padding: 0px 10px;
+        margin: 0px 30px;
+    }
+}
